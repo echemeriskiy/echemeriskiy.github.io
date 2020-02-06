@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>VKURSI</title>
+    <meta name="description" content="Vkursi landing page">
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/vendors/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="../js/vendors/slick.js"></script>
+    <script src="../js/vendors/gsap-latest-beta.min.js"></script>
+    <script src="../js/vendors/jquery.countTo.js"></script>
+    <script src="../js/vendors/jquery.easing.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__content">
+            <div class="header__left">
+              <div class="logo"><a href="./"><span>Vkursi Pro</span></a></div>
+            </div>
+            <div class="header__right">
+              <div class="nav">
+                <div class="nav__item"><a href="https://vkursi.pro/">Vkursi</a></div>
+                <div class="nav__item"><a href="https://vsudi.com.ua/">VSUDI</a></div>
+                <div class="nav__item nav__item_new current"><a href="/">DATA BI</a></div>
+              </div>
+              <div class="panel">
+                <div class="panel__link dropdown"><span>A</span></div>
+                <div class="panel__nav">
+                  <div class="nav">
+                    <div class="nav__item dropdown"><span class="link"><span class="icon-phone"></span></span>
+                      <ul class="nav__item__list">
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav__item dropdown"><span class="link"><span class="icon-user"></span></span>
+                      <ul class="nav__item__list">
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav__item dropdown"><span class="link"><span>Мій кабінет</span></span>
+                      <ul class="nav__item__list">
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                        <li><a href="./">Ссылка меню</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__header">
+          <div class="main__header__content">
+            <div class="main__header__left">
+              <div class="logo"><span>Data BI</span></div>
+            </div>
+            <div class="main__header__right">
+              <div class="nav">
+                <div class="nav__line"></div>
+                <div class="nav__item active"><a href="#pasibilities">Можливості</a></div>
+                <div class="nav__item"><a href="#branches">Галузі</a></div>
+                <div class="nav__item"><a href="#audit">Аудит існуючої бази</a></div>
+                <div class="nav__item"><a href="#api">API</a></div>
+              </div>
+              <div class="main__action"><span class="btn btn_round btn_sm" onclick="App.popup.open('consult')">Замовити консультацію</span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-wrapper">
+        <main>
+          <div class="main section" id="pasibilities">
+            <div class="main__bg"></div>
+            <div class="main__content">
+              <div class="container">
+                <div class="center">
+                  <div class="title">
+                    <h2><span class="text text_light">Великі дані для бізнесу</span> <br> Перший в Україні <br class="mobile"> ВІ інструмент, який дозволяє:</h2>
+                  </div>
+                  <ul class="list list_unordered">
+                    <li>Аналізувати весь бізнес України за 100+ критеріями</li>
+                    <li>Оцінити об’єм ринку, побудувати рейтинги компаній</li>
+                    <li>З математичною точністю сформувати базу потенційних клієнтів</li>
+                  </ul>
+                </div>
+                <div class="main__laptop">
+                  <div class="main__laptop__frame" style="background-image: url('../img/macbook.png');">
+                    <div class="main__laptop__screen">
+                      <div>
+                        <video id="previevVideo" playsinline muted autoplay="true">
+                          <source src="../img/video/top_anim.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main__action actions actions_center"><a class="link link_blue link_play" data-fancybox href="https://vimeo.com/191947042"><span><span>Дивитися відео</span><span class="icon-play"></span></span></a><span class="btn btn_sm btn_round btn_outlined" onclick="App.popup.open('consult')">Замовити консультацію</span></div>
+              </div>
+            </div>
+            <div class="main__info">
+              <div class="container">
+                <div class="main__info__content">
+                  <div class="title">
+                    <h2><span class="text text_light">Заряджай свій бізнес даними</span> <br> 100+ критеріїв для аналізу бізнесу On&#8209;line</h2>
+                  </div>
+                  <div class="main__info__lists" data-slider="main">
+                    <ul class="list list_unordered" data-slider-item>
+                      <li>Тип Фізична/Юридична</li>
+                      <li>Регіон/населений пункт</li>
+                      <li>Дата реєстрації (новий бізнес)</li>
+                      <li>Вид діяльності за КВЕД</li>
+                      <li>Країна кінцевих бенефіціарів</li>
+                    </ul>
+                    <ul class="list list_unordered" data-slider-item>
+                      <li>Статус ПДВ, група ЄП</li>
+                      <li>Дозвільні документи, ліцензії</li>
+                      <li>Інтелектуальна власність</li>
+                      <li>Нерухоме майно, земля</li>
+                      <li>Транспортні засоби</li>
+                    </ul>
+                    <ul class="list list_unordered" data-slider-item>
+                      <li>Кількість працівників</li>
+                      <li>Суди, кількість рішень, форма судочинства</li>
+                      <li>Наявність боргів, заплановані перевірки</li>
+                      <li>Кількість тендерів та сума контрактів</li>
+                      <li>Сума коштів отриманих від держави</li>
+                    </ul>
+                    <ul class="list list_unordered" data-slider-item>
+                      <li>Клас боржника за постановою НБУ №351</li>
+                      <li>Міжнародний кредитний рейтинг за S&P</li>
+                      <li>Активи та зобов’язання</li>
+                      <li>Виручка та прибутки/збитки</li>
+                      <li>ЗЕД: експорт/імпорт, УКТЗЕД</li>
+                    </ul>
+                  </div>
+                  <div class="main__info__dots nav-dots">
+                    <div class="dot active" onclick="App.slider.changeSlide(0)" data-dot="main"></div>
+                    <div class="dot" onclick="App.slider.changeSlide(1)" data-dot="main"></div>
+                    <div class="dot" onclick="App.slider.changeSlide(2)" data-dot="main"></div>
+                    <div class="dot" onclick="App.slider.changeSlide(3)" data-dot="main"></div>
+                  </div>
+                  <div class="main__action"><span class="link link_primary">І це лише 20 критеріїв з понад 100 доступних</span></div>
+                  <div class="title">
+                    <h4><span class="text text_light"> Якщо ви плануєте масштабувати бізнес або запускати новий продукт  –  VKURSI DATA BI дозволить знайти саме ту аудиторію, для якої ваша пропозиція буде найбільш релевантною.</span></h4>
+                  </div>
+                </div>
+                <div class="performance">
+                  <div class="performance__list">
+                    <div class="performance__item">
+                      <div class="performance__item__indicator"><span><span class="count" data-to="27000">0</span>+</span></div>
+                      <div class="performance__item__descr">
+                        <p>Аграріїв з оформленим<br> правам на землю</p>
+                      </div>
+                    </div>
+                    <div class="performance__item">
+                      <div class="performance__item__indicator"><span><span class="count" data-to="17000">0</span>+</span></div>
+                      <div class="performance__item__descr">
+                        <p>Експортерів та<br> імпортерів</p>
+                      </div>
+                    </div>
+                    <div class="performance__item">
+                      <div class="performance__item__indicator"><span><span class="count" data-to="31000">0</span>+</span></div>
+                      <div class="performance__item__descr">
+                        <p>Компаній з виручкою<br> від 20 000 000 грн</p>
+                      </div>
+                    </div>
+                    <div class="performance__item">
+                      <div class="performance__item__indicator"><span><span class="count" data-to="270000">0</span>+</span></div>
+                      <div class="performance__item__descr">
+                        <p>Суб’єктів мають діючі <br> ліцензії/дозволи</p>
+                      </div>
+                    </div>
+                    <div class="performance__item">
+                      <div class="performance__item__indicator"><span><span class="count" data-to="62000">0</span>+</span></div>
+                      <div class="performance__item__descr">
+                        <p>Компаній з штатом <br>від 10 працівників</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="title">
+                    <h4><span class="text text_light">Щоденне оновлення даних з 70+ джерел</span></h4>
+                  </div>
+                  <div class="update__list">
+                    <div class="update__item">
+                      <div class="update__item-count"><span><span class="count" data-to="1000">0</span>+</span></div>
+                      <div class="update__item-name">Нових Юросіб і ФОП реєструється щодня</div>
+                      <div class="update__item-comment">(Понад 200 юридичних осіб і 800 ФОП)</div>
+                    </div>
+                    <div class="update__item">
+                      <div class="update__item-count"><span><span class="count" data-to="5000">0</span>+</span></div>
+                      <div class="update__item-name">Відбувається змін в ЄДР щодня</div>
+                      <div class="update__item-comment">(Зміни: засновників, КВЕД, назви, адреси)</div>
+                    </div>
+                    <div class="update__item">
+                      <div class="update__item-count"><span><span class="count" data-to="180">0</span>+</span></div>
+                      <div class="update__item-name">Нових платників ПДВ щодня</div>
+                      <div class="update__item-comment">(Понад 160 юридичних осіб і<br> 20 ФОП)</div>
+                    </div>
+                    <div class="update__item">
+                      <div class="update__item-count"><span><span class="count" data-to="25000">0</span>+</span></div>
+                      <div class="update__item-name">Нових судових рішень та<br> засідань щодня</div>
+                      <div class="update__item-comment">(Судові рішення та засідання)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section section_gray" id="branches">
+            <div class="container">
+              <div class="title title_white">
+                <h3>Як застосовують Vkursi Data BI в різних галузях бізнесу</h3>
+              </div>
+              <div class="columns">
+                <div class="columns__list">
+                  <div class="columns__item">
+                    <h4>Банки</h4>
+                    <ul class="list list_unordered">
+                      <li>Оцінка об’єму всього ринку, галузі, регіону</li>
+                      <li>Визначення класу боржника за постановою НБУ № 351</li>
+                      <li>Сегментація за рівнем EBITDA</li>
+                      <li>Щоденна інформація про новий бізнес</li>
+                      <li>Контакти потенційних клієнтів</li>
+                    </ul>
+                  </div>
+                  <div class="columns__item">
+                    <h4>Торгівля, послуги</h4>
+                    <ul class="list list_unordered">
+                      <li>Пошук цільової аудиторії за КВЕД</li>
+                      <li>Аналіз за типом ліцензій/дозволів</li>
+                      <li>Рейтинг компаній за виручкою, прибутком, штатом</li>
+                      <li>Аналіз конкуренції, частки на ринку</li>
+                    </ul>
+                  </div>
+                  <div class="columns__item">
+                    <h4>Аграрний сектор</h4>
+                    <ul class="list list_unordered">
+                      <li>Аналіз земельного банку регіону</li>
+                      <li>Сегментація компаній за типом власності</li>
+                      <li>Рейтинг компаній за земельним банком</li>
+                      <li>Рейтинг за кількістю транспорту</li>
+                      <li>Аналіз ЗЕД за країнами та групами товарів</li>
+                    </ul>
+                  </div>
+                  <div class="columns__item">
+                    <h4>Маркетинг/SEO/SMM</h4>
+                    <ul class="list list_unordered">
+                      <li>Оцінка об’єму ринку, порівняльний аналіз за різні роки</li>
+                      <li>Пошук сегменту схожого на цільовий</li>
+                      <li>Формування бази потенційних клієнтів</li>
+                      <li>Таргетована комунікація під конкретну аудиторію</li>
+                    </ul>
+                  </div>
+                  <div class="columns__item">
+                    <h4>Державний сектор</h4>
+                    <ul class="list list_unordered">
+                      <li>Економічний профайл міст, ОТГ</li>
+                      <li>Порівняльний аналіз економіки регіонів</li>
+                      <li>Аналіз активів, нерухомого майна</li>
+                      <li>Аналіз державних тендерів, витрат бюджету</li>
+                      <li>Пошук надійних постачальників</li>
+                    </ul>
+                  </div>
+                  <div class="columns__item">
+                    <h4>Юристи/аудитори</h4>
+                    <ul class="list list_unordered">
+                      <li>Аналіз бізнесу за судовими процесами, боргами, перевірками</li>
+                      <li>Рейтинги за фін. показниками, інвестиційним класом (S&P)</li>
+                      <li>Сегментація бізнесу за країнами кінцевих бенефіціарів</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section section_black" id="audit">
+            <div class="container">
+              <div class="report">
+                <div class="title">
+                  <h2><span class="text text_light">Аналіз існуючої бази</span> <br> “Груповий звіт по списку контрагентів”</h2>
+                </div>
+                <div class="report__question">
+                  <div class="report__question-item"><span class="question --single">У вас є база клієнтів?</span></div>
+                  <div class="report__question-item"><span class="question">Ви – власник бізнесу, директор, маркетолог або Sales менеджер?</span> Ваша задача – комплексний аналіз і сегментація існуючої бази, виявлення потреб для формування релевантних пропозицій під конкретного клієнта?</div>
+                  <div class="report__question-item"><span class="question">Ви – спеціаліст з безпеки, фінансового моніторингу або юрист?</span> У вашого підприємства є 100 або навіть 100 000 контрагентів і ваша задача – миттєво виявити та проаналізувати всі ймовірні фактори-ризику?</div>
+                  <div class="report__question-item"><span class="question">Ви – фінансовий директор, аудитор, головний бухгалтер?</span> У вас десятки або навіть тисячі операцій в день? Вам важлива – 100% точність і актуальність реквізитів всіх контрагентів: адреса, КВЕД, статус платника ПДВ, система оподаткування тощо?</div>
+                </div>
+                <div class="report__question">
+                  <div class="report__question-item">Просто додайте список існуючих клієнтів до модуля “Груповий звіт” і вже за декілька хвилин система проаналізує базу і сформує <span>звіт на основі даних з 70+ джерел</span></div>
+                </div>
+                <div class="report__row">
+                  <div class="report__item"><span>Дізнайтесь хто ваші клієнти,</span> <span> їх портрет/потреби та масштаби бізнесу</span></div>
+                  <div class="report__item"><span>Відстежуйте всі зміни та </span> <span> ймовірні фактори-ризику</span></div>
+                  <div class="report__item"><span>Сформуйте список компаній, для яких</span> <span> ваша пропозиція буде найбільш актуальною</span></div>
+                </div>
+                <p class="report__link">Аналізуйте дані розділів звіту On&#8209;line або завантажуйте у форматі Excel</p>
+                <div class="report__sliders">
+                  <div class="report__images">
+                    <div class="slider">
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_1.png" data-caption="&lt;h6&gt;Анкета&lt;/h6&gt;&lt;p&gt;Аналізуйте список компаній за видом діяльності (КВЕД), регіоном, статусом, наявністю повідомлень про припинення або реорганізацію, включенням до санкційних списків &lt;/p&gt; "><img src="../img/tabs/tab_1.png" alt="Анкета"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_2.png" data-caption="&lt;h6&gt;Фінанси&lt;/h6&gt;&lt;p&gt;Сегментуйте компанії за: доходом (виручкою), прибутком/збитком, активами, зобов’язаннями. Аналізуйте динаміку зміни показників за попередні роки &lt;/p&gt; "><img src="../img/tabs/tab_2.png" alt="Фінанси"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_3.png" data-caption="&lt;h6&gt;Кредитний рейтинг&lt;/h6&gt;&lt;p&gt;Визначайте клас боржника контрагента за методикою НБУ (постанова № 351). Сегментуйте компанії  за міжнародним кредитним рейтингом (Standard &amp; Poor's) &lt;/p&gt; "><img src="../img/tabs/tab_3.png" alt="Кредитний рейтинг"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_4.png" data-caption="&lt;h6&gt;Зв’язки&lt;/h6&gt;&lt;p&gt;Знайдіть та проаналізуйте всі компанії та осіб, які пов’язані з вашими контрагентами &lt;/p&gt; "><img src="../img/tabs/tab_4.png" alt="Зв’язки"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_5.png" data-caption="&lt;h6&gt;Нерухомість&lt;/h6&gt;&lt;p&gt;Аналізуйте  нерухоме майно контрагентів  за: а)  типом власності: оренда/іпотека/власність, б) площею земельного банку,  в) наявністю обтяжень, судів   &lt;/p&gt; "><img src="../img/tabs/tab_5.png" alt="Нерухомість"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_6.png" data-caption="&lt;h6&gt;Транспорт&lt;/h6&gt;&lt;p&gt;Сегментуйте контрагентів за наявністю та кількістю транспортних засобів, типом, маркою, об’ємом двигуна, типом пального, роком випуску   &lt;/p&gt; "><img src="../img/tabs/tab_6.png" alt="Транспорт"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_7.png" data-caption="&lt;h6&gt;Персонал&lt;/h6&gt;&lt;p&gt;Будуйте рейтинг компаній за штатною чисельністю працівників  &lt;/p&gt; "><img src="../img/tabs/tab_7.png" alt="Персонал"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_8.png" data-caption="&lt;h6&gt;ЗЕД&lt;/h6&gt;&lt;p&gt;Аналізуйте список контрагентів за ЗЕД, країнами експорту/імпорту та групою товарів УКТЗЕД  &lt;/p&gt; "><img src="../img/tabs/tab_8.png" alt="ЗЕД"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_9.png" data-caption="&lt;h6&gt;Тендери&lt;/h6&gt;&lt;p&gt;Будуйте рейтинг компаній за участю у державних тендерах, сегментуйте за кількістю перемог, вартістю контрактів, типом товарів/послуг, аналізуйте динаміку за різні періоди &lt;/p&gt; "><img src="../img/tabs/tab_9.png" alt="Тендери"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_10.png" data-caption="&lt;h6&gt;Ліцензії/дозволи&lt;/h6&gt;&lt;p&gt;Перевіряйте наявність ліцензій та дозвільних документів, аналізуйте за типом, статусом діючі/недіючі &lt;/p&gt; "><img src="../img/tabs/tab_10.png" alt="Ліцензії/дозволи"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_11.png" data-caption="&lt;h6&gt;ТМ/Патенти&lt;/h6&gt;&lt;p&gt;Дізнайтеся хто з ваших контрагентів володіє інтелектуальною власністю: ТМ, патенти, корисні моделі &lt;/p&gt; "><img src="../img/tabs/tab_11.png" alt="ТМ/Патенти"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_13.png" data-caption="&lt;h6&gt;Суди&lt;/h6&gt;&lt;p&gt;Миттєво перевіряйте наявність судів та динаміку судового навантаження по за різні періоди, сегментуйте компанії за кількістю судових документів, формою судочинства тощо    &lt;/p&gt; "><img src="../img/tabs/tab_13.png" alt="Суди"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_14.png" data-caption="&lt;h6&gt;Провадження&lt;/h6&gt;&lt;p&gt;Перевіряйте всіх контрагентів на наявність виконавчих проваджень, статусом боржник/стягувач, станом відкрито/закрито &lt;/p&gt; "><img src="../img/tabs/tab_14.png" alt="Провадження"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_15.png" data-caption="&lt;h6&gt;Борги&lt;/h6&gt;&lt;p&gt;Перевіряйте всіх контрагентів на наявність боргів перед державним і місцевими бюджетами, по заробітній платі, сегментуйте за сумою боргу &lt;/p&gt; "><img src="../img/tabs/tab_15.png" alt="Борги"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_16.png" data-caption="&lt;h6&gt;Перевірки&lt;/h6&gt;&lt;p&gt;Дізнайтесь кого з ваших контрагентів включено до планів перевірок контролюючих органів &lt;/p&gt; "><img src="../img/tabs/tab_16.png" alt="Перевірки"></a></div>
+                      <div class="report__image"><a data-fancybox="swot" href="../img/tabs/tab_17.png" data-caption="&lt;h6&gt;Ризики&lt;/h6&gt;&lt;p&gt;Перевіряйте контрагентів списком, миттєво виявляйте фактори ризику: кримінальні справи, зміну діяльності, санкції, борги, ризикові зв’язки тощо&lt;/p&gt; "><img src="../img/tabs/tab_17.png" alt="Ризики"></a></div>
+                    </div>
+                  </div>
+                  <div class="report__slider">
+                    <div class="report__nav">
+                      <div class="report__nav__container">
+                        <div class="report__nav__slider"></div>
+                        <div data-simplebar data-simplebar-auto-hide>
+                          <div class="report__nav__items"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="report__slide" data-name="Анкета">
+                        <p>Аналізуйте список компаній за видом діяльності (КВЕД), регіоном, статусом, наявністю повідомлень про припинення або реорганізацію, включенням до санкційних списків </p>
+                      </div>
+                      <div class="report__slide" data-name="Фінанси">
+                        <p>Сегментуйте компанії за: доходом (виручкою), прибутком/збитком, активами, зобов’язаннями. Аналізуйте динаміку зміни показників за попередні роки </p>
+                      </div>
+                      <div class="report__slide" data-name="Кредитний рейтинг">
+                        <p>Визначайте клас боржника контрагента за методикою НБУ (постанова № 351). Сегментуйте компанії  за міжнародним кредитним рейтингом (Standard &amp; Poor's) </p>
+                      </div>
+                      <div class="report__slide" data-name="Зв’язки">
+                        <p>Знайдіть та проаналізуйте всі компанії та осіб, які пов’язані з вашими контрагентами </p>
+                      </div>
+                      <div class="report__slide" data-name="Нерухомість">
+                        <p>Аналізуйте  нерухоме майно контрагентів  за: а)  типом власності: оренда/іпотека/власність, б) площею земельного банку,  в) наявністю обтяжень, судів   </p>
+                      </div>
+                      <div class="report__slide" data-name="Транспорт">
+                        <p>Сегментуйте контрагентів за наявністю та кількістю транспортних засобів, типом, маркою, об’ємом двигуна, типом пального, роком випуску   </p>
+                      </div>
+                      <div class="report__slide" data-name="Персонал">
+                        <p>Будуйте рейтинг компаній за штатною чисельністю працівників  </p>
+                      </div>
+                      <div class="report__slide" data-name="ЗЕД">
+                        <p>Аналізуйте список контрагентів за ЗЕД, країнами експорту/імпорту та групою товарів УКТЗЕД  </p>
+                      </div>
+                      <div class="report__slide" data-name="Тендери">
+                        <p>Будуйте рейтинг компаній за участю у державних тендерах, сегментуйте за кількістю перемог, вартістю контрактів, типом товарів/послуг, аналізуйте динаміку за різні періоди </p>
+                      </div>
+                      <div class="report__slide" data-name="Ліцензії/дозволи">
+                        <p>Перевіряйте наявність ліцензій та дозвільних документів, аналізуйте за типом, статусом діючі/недіючі </p>
+                      </div>
+                      <div class="report__slide" data-name="ТМ/Патенти">
+                        <p>Дізнайтеся хто з ваших контрагентів володіє інтелектуальною власністю: ТМ, патенти, корисні моделі </p>
+                      </div>
+                      <div class="report__slide" data-name="Суди">
+                        <p>Миттєво перевіряйте наявність судів та динаміку судового навантаження по за різні періоди, сегментуйте компанії за кількістю судових документів, формою судочинства тощо    </p>
+                      </div>
+                      <div class="report__slide" data-name="Провадження">
+                        <p>Перевіряйте всіх контрагентів на наявність виконавчих проваджень, статусом боржник/стягувач, станом відкрито/закрито </p>
+                      </div>
+                      <div class="report__slide" data-name="Борги">
+                        <p>Перевіряйте всіх контрагентів на наявність боргів перед державним і місцевими бюджетами, по заробітній платі, сегментуйте за сумою боргу </p>
+                      </div>
+                      <div class="report__slide" data-name="Перевірки">
+                        <p>Дізнайтесь кого з ваших контрагентів включено до планів перевірок контролюючих органів </p>
+                      </div>
+                      <div class="report__slide" data-name="Ризики">
+                        <p>Перевіряйте контрагентів списком, миттєво виявляйте фактори ризику: кримінальні справи, зміну діяльності, санкції, борги, ризикові зв’язки тощо</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="report__info">
+                <div class="title">
+                  <h3>Більше не потрібно перевіряти контрагентів по одному</h3>
+                </div>
+                <div class="section__list">
+                  <div class="section__item">
+                    <p>Завантажуйте та перевіряйте контрагентів списком <br> до 100 000 компаній</p>
+                  </div>
+                  <div class="section__item">
+                    <p>Формуйте звіт на групу пов’язаних компаній самостійно або з розділу “Зв’язки”</p>
+                  </div>
+                  <div class="section__item">
+                    <p>Порівнюйте “Груповий звіт” за різні дати, миттєво виявляйте всі зміни та ризики</p>
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="text text_light text_center">
+                    <p>Модуль “Груповий звіт” – це новий рівень перевірки та моніторингу змін по контрагентам.</p>
+                  </div>
+                </div>
+                <div class="actions actions_center"><a class="link link_blue link_play" data-fancybox href="https://vimeo.com/191947042"><span><span>Дивитися відео</span><span class="icon-play"></span></span></a><span class="btn btn_sm btn_round btn_outlined" onclick="App.popup.open('consult')">Замовити консультацію</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="section section_gray" id="api">
+            <div class="container">
+              <div class="center">
+                <div class="title">
+                  <h2><span class="text text_light">Працюйте в програмах <br class="mobile"> до яких звикли</span> <br> АРІ інтеграція даних Vkursi <br class="mobile"> з вашими програмами</h2>
+                </div>
+                <ul class="list list_unordered">
+                  <li>Збагачуйте картки існуючих клієнтів інформацією, яка виявляє їх потреби</li>
+                  <li>Автоматизуйте перевірку контрагентів та ручне внесення даних в картки нових клієнтів</li>
+                  <li>Завантажуйте бази потенційних клієнтів в свої системи</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container apiPlayerContainer">
+              <div class="videoPlayer">
+                <video id="api-video" playsinline muted autoplay onclick="App.videoApi.toggle()">
+                  <source src="../img/video/api_anim.mp4" type="video/mp4">
+                </video>
+                <div class="videoPlayer__buttons">
+                  <div class="videoPlayer__btn" data-type="play" onclick="App.videoApi.play()"><img src="../img/play.svg"></div>
+                  <div class="videoPlayer__btn active" data-type="pause" onclick="App.videoApi.pause()"><img src="../img/pause.svg"></div>
+                  <div class="videoPlayer__btn" data-type="replay" onclick="App.videoApi.replay()"><img src="../img/replay.svg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="crm">
+              <div class="container">
+                <div class="crm__header">Заряджайте свої ERP/CRM системи даними VKURSI</div>
+                <div class="crm__examples">
+                  <div class="crm__examples-item"><img src="../img/crm/crm_1.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_2.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_3.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_4.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_5.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_6.svg"></div>
+                  <div class="crm__examples-item"><img src="../img/crm/crm_7.svg"></div>
+                </div>
+                <div class="crm__adventages" data-slider="crm">
+                  <div class="crm__adventages-item" data-slider-item>
+                    <h4 class="crm__adventages-header"><span class="hidden-desctop">Збільшуйте продажі/конверсію</span><span class="hidden-mobile">Збільшуйте продажі та конверсію</span></h4>
+                    <ul class="list list_unordered">
+                      <li>Готовий профіль клієнта та розуміння його потреб</li>
+                      <li>Робота з аудиторією, для якої ваша пропозиція найбільш актуальна</li>
+                      <li>Розуміння масштабу бізнесу клієнтів та прогнозування об’єму контрактів</li>
+                    </ul>
+                  </div>
+                  <div class="crm__adventages-item" data-slider-item>
+                    <h4 class="crm__adventages-header">Автоматизуйте рутину</h4>
+                    <ul class="list list_unordered">
+                      <li>Автоматизація збору інформації з різних джерел та ручного внесення даних в картки клієнтів</li>
+                      <li>Актуалізація існуючої клієнтської бази</li>
+                      <li>Відсутність помилок в документах</li>
+                    </ul>
+                  </div>
+                  <div class="crm__adventages-item" data-slider-item>
+                    <h4 class="crm__adventages-header">Керуйте ризиками</h4>
+                    <ul class="list list_unordered">
+                      <li>Автоматичний скоринг кредитного рейтингу та факторів-ризику санкції, суди, борги, банкрутство</li>
+                      <li>Миттєва перевірка благонадійності клієнта та групи пов’язаних компаній</li>
+                      <li>Моніторинг змін в 70+ реєстрах</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="crm__adventages-dots nav-dots">
+                  <div class="dot active" onclick="App.slider.changeSlide(0)" data-dot="crm"></div>
+                  <div class="dot" onclick="App.slider.changeSlide(1)" data-dot="crm"></div>
+                  <div class="dot" onclick="App.slider.changeSlide(2)" data-dot="crm"></div>
+                </div>
+                <div class="crm__button"><span class="btn btn_round btn_sm btn_outlined" onclick="App.popup.open('consult')">Замовити консультацію</span></div>
+              </div>
+            </div>
+            <div class="section__data" style="display: none">
+              <div class="container">
+                <div class="title">
+                  <h3><span class="text text_light">Оберіть дані, які доможусь продавати саме вам</span></h3>
+                </div>
+              </div>
+              <div class="section__data__content">
+                <div class="container">
+                  <div class="section__data__panel">
+                    <ul class="list list_unordered">
+                      <li>Тип Фізична/Юридична</li>
+                      <li>Регіон/населений пункт</li>
+                      <li>Дата реєстрації</li>
+                      <li>Вид діяльності (КВЕД)</li>
+                      <li>Країна кінцевих бенефіціарів</li>
+                      <li>Статус ПДВ, група ЄП</li>
+                      <li>Наявність дозвільних документів, ліцензій</li>
+                      <li>Інтелектуальна власність</li>
+                      <li>Наявність прав на майно, землю</li>
+                      <li>Транспортні засоби</li>
+                      <li>Кількість працівників</li>
+                      <li>Суди, кількість, форма судочинства</li>
+                      <li>Наявність боргів, заплановані перевірки</li>
+                      <li>Кількість тендерів та сума контрактів</li>
+                      <li>Сума коштів отриманих від держави</li>
+                      <li>Клас боржника (НБУ №351)</li>
+                      <li>Міжнародний кредитний рейтинг (S&P)</li>
+                      <li>Активи та зобов’язаннями</li>
+                      <li>Виручка, прибуток/збиток</li>
+                      <li>ЗЕД: експорт/імпорт, УКТЗЕД</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="section__images"><img class="section__img section__img_page" src="../img/page.png" alt=""><img class="section__img section__img_form" src="../img/form.png" alt=""></div>
+              </div>
+            </div>
+            <div class="container" style="display: none">
+              <div class="title">
+                <h3><span class="text text_light">Переваги АРІ для вашого бізнесу</span></h3>
+              </div>
+              <div class="section__columns">
+                <div class="section__column">
+                  <div class="title">
+                    <h6>Збільшення продажів/конверсії</h6>
+                  </div>
+                  <ul class="list list_unordered">
+                    <li>Готовий профіль клієнта та розуміння його потреб</li>
+                    <li>Робота з аудиторією, для якої ваша пропозиція найбільш актуальна</li>
+                    <li>Формування релевантних пропозицій під потреби клієнта</li>
+                  </ul>
+                </div>
+                <div class="section__column">
+                  <div class="title">
+                    <h6>Автоматизація ручних процесів</h6>
+                  </div>
+                  <ul class="list list_unordered">
+                    <li>Автоматизація рутинної роботи по збору інформації з різних джерел та ручного внесення даних в картку клієнта</li>
+                    <li>Відсутність помилок в документах</li>
+                    <li>Не потребує навчання –  співробітники працюють в програмах до яких звикли</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section section_black" id="section_tariffs">
+            <div class="container">
+              <div class="title">
+                <h2>Оберіть обсяг ресурсів, який відповідає вашим потребам</h2>
+              </div>
+              <div class="tariff__question">
+                <div class="tariff__question-item">Кожний бізнес унікальний, у кожного свої задачі, потреби та масштаби. Одні компанії працюють по всій Україні, інші ведуть бізнес в рамках одного регіону, у когось сто контрагентів, а у когось сотні тисяч.</div>
+                <div class="tariff__question-item">“Великі дані” - це інноваційний інструмент, який відкриває бізнесу нові можливості для розвитку. Для нас важливо, щоб “Великі дані” були доступні і малому (регіональному) і великому бізнесу.</div>
+                <div class="tariff__question-item">Якщо ви працюєте по всій Україні або плануєте масштабувати бізнес на на інші регіони - оберіть один з тарифів “DATA BI Бізнес-аналітика вся Україна”.  Якщо ви працюєте в одному регіоні - ваші потреби покриє тариф “DATA BI Регіональний”.</div>
+              </div>
+            </div>
+            <div class="tariff">
+              <div class="tariff__list" data-slider="tariff">
+                <div class="tariff__item" data-slider-item>
+                  <div class="tariff__header">DATA BI</div>
+                  <div class="tariff__price">30 000 грн/рік</div>
+                  <div class="tariff__users">Доступ для 5 користувачів</div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">  Модуль: DATA BI</div>
+                    <div class="tariff__block-analytic">Бізнес-аналітика 1 регіон України*</div>
+                    <div class="tariff__block-comment"> (Всі юридичні особи + ФОП)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">20 000 досьє/рік</div>
+                    <div class="tariff__block-comment">Дані з 70 джерел</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">20 000 перевірок‌ <br>фізичних‌ ‌осіб/рік‌</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">2 000 компаній або осіб<br> на моніторингу</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">Модуль: VSUDI</div>
+                    <div class="tariff__block-comment">(Аналіз і моніторинг судових рішень)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">Аудит бази</div>
+                    <div class="tariff__block-comment">(Аудит бази 1 000 контрагентів)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">Модуль: Нерухомість‌</div>
+                    <div class="tariff__block-comment">Перевірка речових прав/обтяжень</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">АРІ доступ до даних</div>
+                    <div class="tariff__block-comment">Інтеграція з вашими програмами</div>
+                  </div>
+                </div>
+                <div class="tariff__item" data-slider-item>
+                  <div class="tariff__header">DATA BI XL</div>
+                  <div class="tariff__price">120 000 грн/рік</div>
+                  <div class="tariff__users">Доступ для 10 користувачів</div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: DATA BI</div>
+                    <div class="tariff__block-analytic">Бізнес-аналітика вся Україна</div>
+                    <div class="tariff__block-comment"> (Тільки юридичні особи)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   100 000 досьє/рік</div>
+                    <div class="tariff__block-comment">   Дані з 70 джерел</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">100 000 перевірок‌<br> фізичних‌ ‌осіб/рік‌</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">10 000 компаній або осіб <br> на моніторингу</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: VSUDI</div>
+                    <div class="tariff__block-comment">   (Аналіз і моніторинг судових рішень)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Аудит бази</div>
+                    <div class="tariff__block-comment">   (Аудит бази 5 000 контрагентів)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: Нерухомість‌</div>
+                    <div class="tariff__block-comment">   Перевірка речових прав/обтяжень</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   АРІ доступ до даних</div>
+                    <div class="tariff__block-comment">   Інтеграція з вашими програмами</div>
+                  </div>
+                </div>
+                <div class="tariff__item" data-slider-item>
+                  <div class="tariff__header">DATA BI XXL</div>
+                  <div class="tariff__price">300 000 грн/рік</div>
+                  <div class="tariff__users">Доступ для 30 користувачів</div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: DATA BI</div>
+                    <div class="tariff__block-analytic">Бізнес-аналітика вся Україна</div>
+                    <div class="tariff__block-comment"> (Всі юридичні особи + ФОП)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   200 000 досьє/рік</div>
+                    <div class="tariff__block-comment">   Дані з 70 джерел</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">200 000 перевірок‌ <br>‌ фізичних‌ ‌осіб/рік‌</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">50 000 компаній або осіб<br> на моніторингу</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: VSUDI</div>
+                    <div class="tariff__block-comment">   (Аналіз і моніторинг судових рішень)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Аудит бази</div>
+                    <div class="tariff__block-comment">   (Аудит бази 25 000 контрагентів)</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   Модуль: Нерухомість‌</div>
+                    <div class="tariff__block-comment">Перевірка речових прав/обтяжень</div>
+                  </div>
+                  <div class="tariff__block">
+                    <div class="tariff__block-name">   АРІ доступ до даних</div>
+                    <div class="tariff__block-comment">   Інтеграція з вашими програмами</div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-dots">
+                <div class="dot" onclick="App.slider.tariff(0)" data-dot="tariff"></div>
+                <div class="dot active" onclick="App.slider.tariff(1)" data-dot="tariff"></div>
+                <div class="dot" onclick="App.slider.tariff(2)" data-dot="tariff"></div>
+              </div>
+            </div>
+            <div class="tariff__bottom">
+              <div class="title">
+                <h2>Залишилися запитання?</h2>
+              </div><span class="btn btn_md btn_blue btn_round btn_outlined" onclick="App.popup.open('consult')">Замовити консультацію</span>
+            </div>
+          </div>
+          <div class="section section_white" id="section_friends">
+            <div class="container">
+              <div class="title title_black">
+                <h3>Друзі та клієнти VKURSI</h3>
+              </div>
+              <div class="friends">
+                <div class="friends__list">
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/pumb.svg" alt="pumb"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/lifecell.svg" alt="lifecell"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/hill.svg" alt="hill"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/microsoft.svg" alt="microsoft"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/watsons.svg" alt="watsons"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/tac.svg" alt="tac"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/ucab.svg" alt="ucab"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/pravex.svg" alt="pravex"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/vasilKisil_logo.svg" alt="vasilKisil_logo"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/axon_logo.svg" alt="axon_logo"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/oneplusone.svg" alt="oneplusone"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/cid.svg" alt="cid"></a></div>
+                  <div class="friends__item"><a href="./" target="_blank"><img src="../img/partners/smartfarming.svg" alt="smartfarming"></a></div>
+                </div>
+              </div>
+              <div class="callback">
+                <div class="callback__title">
+                  <h2><span class="text text_light">Приєднуйтесь до Big Data спільноти</span> Дізнайтесь, як великі дані <br class="mobile"> виведуть ваш бізнес <br class="mobile"> на новий рівень розвитку</h2>
+                </div>
+                <div class="actions"><span class="btn btn_round btn_lg" onclick="App.popup.open('consult')">Замовити консультацію менеджера</span></div>
+                <div class="callback__subtitle">Vkursi Pro | Перша в Україні <br class="mobile"> Business intelligence платформа,<br class="mobile"> для аналізу бізнес-даних в режимі <br class="mobile"> реального часу</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="popup-overfrow"></div>
+      <div class="popup-wrap" data-type="consult" onclick="App.popup.close('consult')">
+        <div class="popup">
+          <div class="popup__header">Заповніть форму заявки, <br> менеджер зв'яжеться з вами найближчим часом</div>
+          <form class="popup__form" onsubmit="App.form.submit()">
+            <label class="popup__label"><span class="popup__label-text">ПІБ</span>
+              <input class="popup__label-content" placeholder="Введіть ПІБ" data-type="pib" name="consult__pib" onfocusout="App.form.checkInput()">
+            </label>
+            <label class="popup__label"><span class="popup__label-text">E-mail</span>
+              <input class="popup__label-content" placeholder="Введіть e-mail" data-type="email" name="consult__email" onfocusout="App.form.checkInput()">
+            </label>
+            <label class="popup__label"><span class="popup__label-text">Номер телефону</span>
+              <input class="popup__label-content" placeholder="+38 (0__) - ___ - __ - __" type="tel" data-type="tel" name="consult__tel" onfocusout="App.form.checkInput()">
+            </label>
+            <label class="popup__label"><span class="popup__label-text">Назва компанії</span>
+              <input class="popup__label-content" placeholder="Введіть назву компанії" data-type="company" name="consult__company" onfocusout="App.form.checkInput()">
+            </label>
+            <label class="popup__label"><span class="popup__label-text">Код ЄДРПОУ або ІПН</span>
+              <input class="popup__label-content" placeholder="Введіть ЄДРПОУ" data-type="ipn" name="consult__ipn" onfocusout="App.form.checkInput()">
+            </label>
+            <label class="popup__label"><span class="popup__label-text">Посада</span>
+              <input class="popup__label-content" placeholder="Введіть посаду" data-type="position" name="consult__position" onfocusout="App.form.checkInput()">
+            </label>
+            <div class="popup__info"><i class="popup__info-ico icon-question"></i>
+              <p>Вкажіть свої питання в повідомленні</p>
+            </div>
+            <label class="popup__label">
+              <div class="popup__label-text">Повідомлення</div><span class="popup__label-content textarea">
+                <textarea data-type="message" name="consult__message" placeholder="Введіть текст повідомлення" onfocusout="App.form.checkInput()"></textarea></span>
+            </label>
+            <div class="popup__form-error"></div>
+            <div class="popup__bottom">
+              <div class="popup__bottom-info">Натискаючи кнопку “Відправити заявку”, надаю згоду на обробку моїх персональних даних для зв’язку зі мною. <br> Ми не передаємо ваші дані стороннім особам</div>
+              <div class="popup__bottom-buttons">
+                <button class="blue-btn-line">Відправити заявку</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container container_lg">
+          <div class="footer__content">
+            <div class="footer__top">
+              <div class="footer__row">
+                <div class="footer__left">
+                  <div class="footer__item">
+                    <div class="footer__title"><span>Зв’яжіться з нами</span></div><a class="link link_icon" href="mailto:info@vkursi.pro"><span><span class="icon-mail"></span><span>info@vkursi.pro</span></span></a>
+                  </div>
+                  <div class="footer__item">
+                    <div class="footer__title"><span>Пропозиції по співпраці і партнерству</span></div><a class="link link_icon" href="mailto:partners@vkursi.pro"><span><span class="icon-mail"></span><span>partners@vkursi.pro</span></span></a>
+                  </div>
+                  <div class="footer__item"><a class="btn btn_sm btn_outlined" href="./">Замовити дзвінок</a></div>
+                </div>
+                <div class="footer__right">
+                  <div class="footer__nav">
+                    <div class="footer__nav__list">
+                      <div class="footer__nav__item">
+                        <div class="footer__item">
+                          <div class="footer__title"><span>Великі дані для бізнесу</span></div>
+                          <ul class="footer__list">
+                            <li><a class="link link_underline" href="">Vkursi Data BI</a></li>
+                            <li><a class="link link_underline" href="">Груповий звіт</a></li>
+                            <li><a class="link link_underline" href="">Vkursi Data API</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="footer__nav__item">
+                        <div class="footer__item">
+                          <div class="footer__title"><span>Модулі</span></div>
+                          <ul class="footer__list">
+                            <li><a class="link link_underline" href="">Перевірка компаній</a></li>
+                            <li><a class="link link_underline" href="">Фізичні особи</a></li>
+                            <li><a class="link link_underline" href="">Перевірка майна</a></li>
+                            <li><a class="link link_underline" href="">VSUDI<span class="comment">Аналіз і моніторинг судових рішень</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="footer__nav__item">
+                        <div class="footer__item">
+                          <div class="footer__title"><span>Користувачам</span></div>
+                          <ul class="footer__list">
+                            <li><a class="link link_underline" href="">Публічний договір</a></li>
+                            <li><a class="link link_underline" href="">Законодавство</a></li>
+                            <li><a class="link link_underline" href="">Тарифи</a></li>
+                            <li><a class="link link_underline" href="">Для ЗМІ та журналістів</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer__access">
+                    <div class="footer__item">
+                      <div class="footer__title"><span>Розширений доступ Vkursi <span class="text text_primary">Pro <br>на 7 днів </span></span></div><a class="btn btn_sm btn_round" href="./">Замовити тест</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__row">
+                <div class="footer__left">
+                  <div class="footer__copyright"><span>2019 &copy; Vkursi. Всі права захищено</span></div>
+                  <ul class="footer__links">
+                    <li><a class="link link_underline" href="">Умови використання</a></li>
+                    <li><a class="link link_underline" href="">Політика конфіденційності</a></li>
+                  </ul>
+                </div>
+                <div class="footer__right">
+                  <div class="footer__parents">
+                    <div class="footer__title"><span>Нас підтримують:</span></div>
+                    <div class="footer__parents__list">
+                      <div class="footer__parent"><a href="./" target="_blank"><img src="../img/hill.svg" alt="Hill"></a></div>
+                      <div class="footer__parent"><a href="./" target="_blank"><img src="../img/microsoft.svg" alt="Microsoft"></a></div>
+                      <div class="footer__parent"><a href="./" target="_blank"><img src="../img/vasilKisil.svg" alt="Vasil Kisil"></a></div>
+                      <div class="footer__parent"><a href="./" target="_blank"><img src="../img/axon.svg" alt="Axon"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
